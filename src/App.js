@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css"
+import React from "react"
+import Header from "./sections/Header"
+import StatisticsCompany from "./sections/StatisticsCompany"
+import CardsDescription from "./sections/CardsDescription"
+import Carousel from "./sections/Carousel"
+import TrustedByLogo from "./sections/TrustedByLogo"
+import Accordion from "./sections/Accordion"
+import AppStore from "./sections/AppStore"
+import Footer from "./sections/Footer"
+import "./styles/MediaQueries.css"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header />
+      <main className="d-flex flex-column justify-content-center align-items-center text-center mb-5">
+        <StatisticsCompany />
+        <CardsDescription />
+        <Carousel />
+        <TrustedByLogo />
+        <Accordion />
+        <AppStore />
+      </main>
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App

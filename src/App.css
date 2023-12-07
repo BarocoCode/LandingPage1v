@@ -1,38 +1,364 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.w-30 {
+  width: 30%;
+}
+.w-40 {
+  width: 40%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.w-50 {
+  width: 50%;
+}
+.w-60 {
+  width: 60%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.w-70 {
+  width: 70%;
+}
+.w-80 {
+  width: 80%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+/* <-- START Hero Section NavBar --> */
+
+.mobile-screen {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: #faf9f6;
+}
+
+.navbar-brand:hover {
+  color: rgba(250, 249, 246, 0.65);
+}
+
+.navbar-brand:active {
+  color: rgba(250, 249, 246, 0.65);
+}
+
+.navbar-toggler:hover {
+  color: rgba(250, 249, 246, 0.25);
+}
+
+.bi-list {
+  color: #faf9f6;
+  font-size: 2rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  color: #faf9f6;
+  font-weight: 300;
+}
+
+.nav-item {
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+.nav-link:hover {
+  color: rgba(250, 249, 246, 0.65);
+}
+
+.nav-link:active {
+  color: rgba(250, 249, 246, 0.65);
+}
+
+.navbar-nav {
+  background-color: rgba(250, 249, 246, 0.14);
+  border-radius: 15px;
+}
+/* <-- END Hero Section NavBar --> */
+
+/* <-- START Hero Section Title and Text --> */
+
+.title-box {
+  width: 90%;
+}
+
+.hero-title-container {
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.text-header {
+  font-size: 0.9rem;
+  color: #faf9f6;
+  background-color: rgba(51, 51, 51, 0.8);
+  border-radius: 15px;
+}
+
+.hero-title {
+  color: #faf9f6;
+  width: 100%;
+}
+
+.description-title-hero {
+  color: #faf9f6;
+  width: 80%;
+  font-size: 0.8rem;
+}
+
+.description-badge {
+  display: none;
+}
+
+.btn-warning {
+  width: 32%;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.btn-light {
+  width: 32%;
+  border: 1px grey solid;
+  padding: 5px;
+  border-radius: 15px;
+}
+.iconsHero {
+  display: none;
+}
+
+/* <-- END Hero Section Title and Text --> */
+
+/* <-- START Section with Percent Details about Company--> */
+.details-company {
+  background-color: #f5f5f5;
+}
+
+.details-title {
+  font-size: 3rem;
+}
+
+.percentage {
+  font-size: 1rem;
+  position: relative;
+  bottom: 15px;
+}
+
+.details-company-box {
+  color: #3b3c36;
+}
+
+.description-container {
+  color: #3b3c36;
+  width: 90%;
+}
+
+.description-title-cards {
+  font-size: 1.1rem;
+}
+
+.btn-cards {
+  width: 40%;
+}
+
+/* <-- END Section with Percent Details about Company--> */
+
+/* <-- START CSS Cards Section --> */
+
+.description-container {
+  margin-top: 4rem;
+}
+
+.description-title-cards {
+  font-size: 1.6rem;
+}
+
+/* <-- END CSS Cards Section --> */
+
+/* <-- START CSS Carousel Section --> */
+
+.image-carousel-first-slide {
+  width: 100%;
+}
+
+.carousel-container {
+  width: 100%;
+}
+
+/* <-- END CSS Carousel Section --> */
+
+/* <-- START TrustedBY Section Logos --> */
+
+.list-logo-trusted {
+  font-size: 0.9rem;
+}
+
+.logo-trusted-container::before {
+  content: "";
+  border-bottom: solid 1px #f5f5f5;
+  position: absolute;
+  left: 3rem;
+  right: 3rem;
+}
+
+.trusted-logo-item {
+  gap: 0.5rem;
+}
+
+.trusted-logo-item {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* <-- END TrustedBY Section Logos --> */
+
+/* <-- START Accordion Section --> */
+
+.accordion-section {
+  margin-top: 8rem;
+  margin-bottom: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.accordion {
+  width: 100%;
 }
+
+.accordion-title-box {
+  width: 80%;
+}
+
+.accordion-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.accordion-paragraph {
+  font-size: 0.9rem;
+}
+
+.accordion-button {
+  font-size: 0.9rem;
+  color: #3b3c36;
+  font-weight: 500;
+}
+
+.accordion-button:focus {
+  background-color: #f5f5f5;
+  color: #3b3c36;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 5px;
+}
+
+.accordion-button:active {
+  background-color: #f5f5f5;
+  border: none;
+  color: #3b3c36;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 8px;
+}
+
+/* <-- END Accordion Section --> */
+
+/* <-- START APP Stores Section --> */
+
+.app-stores-section {
+  position: relative;
+  top: 4rem;
+}
+
+.app-stores {
+  border-radius: 15px;
+}
+
+.title-app-stores {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.description-app-stores {
+  font-size: 0.82rem;
+}
+
+.app-stores-text-box {
+  color: #f5f5f5;
+  width: 90%;
+}
+
+.market-btn {
+  display: inline-block;
+  padding: 0.2125rem 0.775rem;
+  padding-left: 2.5125rem;
+  -webkit-transition: border-color 0.25s ease-in-out,
+    background-color 0.25s ease-in-out;
+  transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  background-position: center left 0.65rem;
+  background-color: #f5f5f5;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  border-radius: 15px;
+  margin: 0.5rem;
+}
+.market-btn .market-button-title {
+  display: block;
+  color: #3b3c36;
+  font-size: 0.9rem;
+}
+.market-btn .market-button-subtitle {
+  display: block;
+  margin-bottom: -0.25rem;
+  color: #888;
+  font-size: 0.7rem;
+}
+.market-btn:hover {
+  background-color: #f7f7f7;
+  text-decoration: none;
+}
+.apple-btn {
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzMDUgMzA1IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzMDUgMzA1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCI+CjxnIGlkPSJYTUxJRF8yMjhfIj4KCTxwYXRoIGlkPSJYTUxJRF8yMjlfIiBkPSJNNDAuNzM4LDExMi4xMTljLTI1Ljc4NSw0NC43NDUtOS4zOTMsMTEyLjY0OCwxOS4xMjEsMTUzLjgyQzc0LjA5MiwyODYuNTIzLDg4LjUwMiwzMDUsMTA4LjIzOSwzMDUgICBjMC4zNzIsMCwwLjc0NS0wLjAwNywxLjEyNy0wLjAyMmM5LjI3My0wLjM3LDE1Ljk3NC0zLjIyNSwyMi40NTMtNS45ODRjNy4yNzQtMy4xLDE0Ljc5Ny02LjMwNSwyNi41OTctNi4zMDUgICBjMTEuMjI2LDAsMTguMzksMy4xMDEsMjUuMzE4LDYuMDk5YzYuODI4LDIuOTU0LDEzLjg2MSw2LjAxLDI0LjI1Myw1LjgxNWMyMi4yMzItMC40MTQsMzUuODgyLTIwLjM1Miw0Ny45MjUtMzcuOTQxICAgYzEyLjU2Ny0xOC4zNjUsMTguODcxLTM2LjE5NiwyMC45OTgtNDMuMDFsMC4wODYtMC4yNzFjMC40MDUtMS4yMTEtMC4xNjctMi41MzMtMS4zMjgtMy4wNjZjLTAuMDMyLTAuMDE1LTAuMTUtMC4wNjQtMC4xODMtMC4wNzggICBjLTMuOTE1LTEuNjAxLTM4LjI1Ny0xNi44MzYtMzguNjE4LTU4LjM2Yy0wLjMzNS0zMy43MzYsMjUuNzYzLTUxLjYwMSwzMC45OTctNTQuODM5bDAuMjQ0LTAuMTUyICAgYzAuNTY3LTAuMzY1LDAuOTYyLTAuOTQ0LDEuMDk2LTEuNjA2YzAuMTM0LTAuNjYxLTAuMDA2LTEuMzQ5LTAuMzg2LTEuOTA1Yy0xOC4wMTQtMjYuMzYyLTQ1LjYyNC0zMC4zMzUtNTYuNzQtMzAuODEzICAgYy0xLjYxMy0wLjE2MS0zLjI3OC0wLjI0Mi00Ljk1LTAuMjQyYy0xMy4wNTYsMC0yNS41NjMsNC45MzEtMzUuNjExLDguODkzYy02LjkzNiwyLjczNS0xMi45MjcsNS4wOTctMTcuMDU5LDUuMDk3ICAgYy00LjY0MywwLTEwLjY2OC0yLjM5MS0xNy42NDUtNS4xNTljLTkuMzMtMy43MDMtMTkuOTA1LTcuODk5LTMxLjEtNy44OTljLTAuMjY3LDAtMC41MywwLjAwMy0wLjc4OSwwLjAwOCAgIEM3OC44OTQsNzMuNjQzLDU0LjI5OCw4OC41MzUsNDAuNzM4LDExMi4xMTl6IiBmaWxsPSIjMmUyZTJlIi8+Cgk8cGF0aCBpZD0iWE1MSURfMjMwXyIgZD0iTTIxMi4xMDEsMC4wMDJjLTE1Ljc2MywwLjY0Mi0zNC42NzIsMTAuMzQ1LTQ1Ljk3NCwyMy41ODNjLTkuNjA1LDExLjEyNy0xOC45ODgsMjkuNjc5LTE2LjUxNiw0OC4zNzkgICBjMC4xNTUsMS4xNywxLjEwNywyLjA3MywyLjI4NCwyLjE2NGMxLjA2NCwwLjA4MywyLjE1LDAuMTI1LDMuMjMyLDAuMTI2YzE1LjQxMywwLDMyLjA0LTguNTI3LDQzLjM5NS0yMi4yNTcgICBjMTEuOTUxLTE0LjQ5OCwxNy45OTQtMzMuMTA0LDE2LjE2Ni00OS43N0MyMTQuNTQ0LDAuOTIxLDIxMy4zOTUtMC4wNDksMjEyLjEwMSwwLjAwMnoiIGZpbGw9IiMyZTJlMmUiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+}
+.google-btn {
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPHBvbHlnb24gc3R5bGU9ImZpbGw6IzVDREFERDsiIHBvaW50cz0iMjkuNTMsMCAyOS41MywyNTEuNTA5IDI5LjUzLDUxMiAyOTkuMDA0LDI1MS41MDkgIi8+Cjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNCREVDQzQ7IiBwb2ludHM9IjM2OS4wNjcsMTgwLjU0NyAyNjIuMTc1LDExOS40NjcgMjkuNTMsMCAyOTkuMDA0LDI1MS41MDkgIi8+Cjxwb2x5Z29uIHN0eWxlPSJmaWxsOiNEQzY4QTE7IiBwb2ludHM9IjI5LjUzLDUxMiAyOS41Myw1MTIgMjYyLjE3NSwzODMuNTUxIDM2OS4wNjcsMzIyLjQ3IDI5OS4wMDQsMjUxLjUwOSAiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0ZGQ0E5NjsiIGQ9Ik0zNjkuMDY3LDE4MC41NDdsLTcwLjA2Myw3MC45NjFsNzAuMDYzLDcwLjk2MWwxMDguNjg4LTYyLjg3N2M2LjI4OC0zLjU5Myw2LjI4OC0xMS42NzcsMC0xNS4yNyAgTDM2OS4wNjcsMTgwLjU0N3oiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+}
+
+/* <-- END APP Stores Section --> */
+
+/* <-- START Footer Section --> */
+
+.about-section-footer {
+  margin-top: 4rem;
+  text-align: center;
+  gap: 1rem;
+  color: #3b3c36;
+  text-decoration: none;
+}
+
+.about-section-list {
+  color: #3b3c36;
+}
+
+.text-decoration-none {
+  color: #3b3c36;
+  font-size: 0.9rem;
+}
+
+.text-decoration-none:hover {
+  color: rgba(51, 51, 51, 0.75);
+}
+
+.logo-footer {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.about-footer-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.email-footer {
+  color: #3b3c36;
+  font-weight: 500;
+}
+
+/* <-- END Footer Section --> */
